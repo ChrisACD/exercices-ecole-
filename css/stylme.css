@@ -1,106 +1,483 @@
 /* Main elements*/
 
-/* Global */
-
-
-html {
-
-box-sizing: border-box;
-height:100%;
-font-size: 100%;
-
+* {
+	box-sizing: border-box;
+	margin: 0;
 }
 
 
 
 body {
-	position: relative;
+	
 	height: 100%;
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light",
 	"Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	font-size: 1em;
 	font-weight: 300;
 	line-height: 1.625em; /*26px*/
-	color: #76787c;
-	background-color: #fff;
-	-webkit-font-smoothing: antialiased;
-}
-
-.light {
-
-    background-image: url('/image/match-background.jpg');
+	color: #f0f2f7;
+	background-color: rgb(24, 19, 19);
+	-webkit-font-smoothing: antialiased;	
     
 }
 
 
-/* Global  */
 
-header {
+h1, h2, h3, h4, h5 {
 
-overflow: hidden;
+	font-family: 'Cinzel', cursive;
+	font-weight: 700;
+	color: #f0f2f7;
+	line-height: 1.5rem;
+	letter-spacing: 10px;
 
-width: 90%;
-background-color: rgba(0,0,0,0.5); 
+
+}
+
+
+h1 {
+ 
+	margin-bottom: 3rem;
+
+	font-size: 6rem;
+
+
+}
+
+
+
+ h1:hover {
+
+	background: linear-gradient(90deg, rgb(64, 224, 216),rgb(237, 10, 10) );
+	text-shadow: none;
+	-webkit-text-fill-color: transparent ;
+	background-clip: text;
+	-webkit-background-clip: text;
+	border-color: white;
+    transition: 2000ms;
+   
+	}
+
+
+/* Main elements*/
+
+
+
+/* premiere partie*/
+
+.container-fluid {
+
+width: 100%;
+height: 100%;
+background-image: url('/image/match-background.jpg');
+
+
+}
+
+
+.container {
+height: auto;
+margin: 0 .7rem;
 display: flex;
 justify-content: space-between;
 
-}
+max-width: 100%;
 
-
-.wrap .logo {
-
-width: 50%;
-margin: 10px;
 
 
 }
 
-
-.wrap .logo img {
-
-    width: 100%;
-    margin: 10px;
-    vertical-align: bottom;
-    height: auto;
-    text-emphasis-color: white;
-    cursor: pointer; 
-    
-}
-
-
-
-
-
-ul {
-
-list-style-type: none;
-padding: 0;
-margin: 0;
-}
-
-
-
-/* links */
-
-a {  
-text-decoration: none;
+.logo {
+	width: 20%;
+	margin: 1rem 0 0 6rem;
 
 }
 
-/* links */
 
+.container .logo img {
 
-
-
-
-
-/* class  */
-
-.container {
 width: 90%;
-margin: 0 20px;
+height: 4rem;
 
 }
+
+
+/* premiere partie*/
+
+
+/* navbar */
+
+.navbar {
+
+width: 70%;
+
+}
+
+
+
+.navbar-nav {
+
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	list-style: none;
+	margin: 0 1rem;
+   
+}
+
+.navbar-item {
+
+
+margin-top: 1rem;
+
+}
+
+.navbar-item a {
+
+text-decoration: none;
+color: #f0f2f7;
+margin: 0 0.4rem;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 1rem;
+
+}
+
+.navbar-item a:hover {
+ color: #860808;
+ padding: 2px;
+
+}
+
+
+/* navbar*/
+
+
+/* section 1 */
+
+#section-1 {
+
+	background-image: url('/image/game-presentation-slider-image-3.jpg');
+	text-align: center;
+    padding: 300px 0 ;
+	margin-top: -100px;
+	width: 100%;
+	
+
+}
+
+
+
+#section-1 .img-section {
+
+display: flex;
+justify-content: space-between;
+margin: 3rem 0;
+
+}
+
+
+
+#section-1  .wrap  p {
+
+	margin: 3rem;
+}
+
+#section-1  .wrap  a {
+
+	text-decoration: none;
+	color: #f0f2f7;
+	border: none;
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+}
+
+
+#section-1  .wrap  a:hover {
+
+	text-decoration: none;
+	color: #f0f2f7;
+	border: 1px solid rgb(182, 8, 8);
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+	transition: 2000ms;
+}
+
+
+
+/* section 1 */
+
+
+/* section 2 */
+
+
+
+#section-2 {
+
+	background-image: url('/image/game-presentation-parallax-1.jpg');
+	background-position: center;
+	background-repeat: repeat;
+	text-align: center;
+    padding: 300px 0 ;
+	margin-top: -140px;
+	width: 100%;
+	
+
+}
+
+
+
+#section-2 .img-section {
+
+display: flex;
+justify-content: center;
+margin: 1rem 0;
+
+}
+
+
+
+#section-2  .wrap  p {
+
+	margin: 1rem auto .4rem ;
+}
+
+#section-1  .wrap  a {
+
+	text-decoration: none;
+	color: #f0f2f7;
+	border: 1px solid white;
+	padding: 1rem 3rem;
+	margin-top: 3rem;
+}
+
+.bullet{
+	display: flex;
+	justify-content: center;
+	margin: 7rem;
+	width: auto;
+
+}
+
+.bulle1 {
+
+	border: 1px solid whitesmoke;
+    height: 1.2rem;
+	width: 1.2rem;
+	margin: 1rem;
+	border-radius: 50%;
+
+
+}
+
+
+
+.bulle1:hover {
+
+	background-color: #f0f2f7;
+	cursor: pointer;
+}
+
+/* section 2 */
+
+
+
+
+/* section 3 */
+
+
+
+#section-3 {
+
+    background-image: url('/image/game-presentation-slider-image-1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	text-align: center;
+    padding: 50px 0 ;
+	width: 100%;
+	height: 1000px;
+
+
+}
+
+#section-3 .wrap-3  {
+
+position:relative;
+float: right;
+margin: 0 2.5rem;
+
+}
+
+#section-3 .wrap-3 img {
+
+background: rgba(46, 42, 42, 70%);
+margin: 0;
+width: 3rem;
+padding: 0;
+
+}
+
+#section-3 .wrap-3 img:hover {
+
+	background: rgba(133, 19, 19, 0.7);
+    cursor: pointer;
+    transition: 2000ms;
+}
+
+/* section3 */
+
+
+
+
+/* section4 */
+
+
+
+
+#section-4 {
+
+background-image: url('/image/game-presentation-parallax-3.jpg');
+ 
+height: 120px;
+width: 100%;
+background-position: center;
+background-repeat: no-repeat;
+padding: 3rem ;
+
+
+}
+
+
+
+
+#section-4 .wrap-4  {
+
+	position:relative;
+	float: right;
+	margin: 0 2.5rem;
+	
+	}
+	
+	#section-4 .wrap-4 img {
+	
+	background: rgba(46, 42, 42, 70%);
+	margin: 0;
+	width: 1.5rem;
+	padding: 0;
+	
+	}
+	
+	#section-4 .wrap-4 img:hover {
+	
+		background: rgba(133, 19, 19, 0.7);
+		cursor: pointer;
+		transition: 2000ms;
+	}
+	
+
+/* section4 */
+
+
+
+/* section5 */
+
+
+
+#section-5 {
+
+	background-image: url('/image/game-presentation-parallax-3.jpg');
+	 
+	height: 500px;
+	width: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 3rem ;
+	margin-bottom: -150px ;
+	
+	}
+	
+	
+	
+	
+	#section-5 .wrap-5  {
+	
+		position:relative;
+		float: right;
+		margin: 0 2.5rem;
+		
+		}
+		
+		#section-5 .wrap-5 img {
+		
+		background: rgba(46, 42, 42, 70%);
+		margin: 0;
+		width: 3rem;
+		padding: 0;
+		
+		}
+		
+		#section-5 .wrap-5 img:hover {
+		
+			background: rgba(133, 19, 19, 0.7);
+			cursor: pointer;
+			transition: 2000ms;
+		}
+		
+
+/* section5 */
+
+
+
+
+/* responsive */
+
+
+@media screen and (max-width: 1280px) {
+	
+	
+	h1 {
+		font-size: 2rem;
+	  }
+
+	 
+	  
+
+	  .container {
+		width: 100%;
+	 
+		 }
+
+
+		 .navbar-item a {
+
+			text-decoration: none;
+			margin: 0 0.4rem;
+			font-family: Arial, Helvetica, sans-serif;
+			font-size: 0.3rem;
+			
+			}
+		
+
+  } 
+
+
+  @media screen and (min-width:600px){
+	  
+	
+	
+	
+
+  } 
+	
+	  
+  
+
+
+
+
+
+
+
+
 
 
 
